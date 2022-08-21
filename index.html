@@ -44,7 +44,7 @@
             "
           >
             <div
-              class="flex flex-col justify-center items-center pt-28  text-center text-white"
+              class="flex flex-col justify-center items-center pt-28 text-center text-white"
             >
               <h2
                 class="font-serif text-3xl font-bold md:text-5xl mb-7 text-orange-500"
@@ -66,7 +66,7 @@
       <!-- Players & Busget Section -->
       <section class="players-budget-section">
         <div class="players-budget-container w-9/12 mx-auto pt-8 pb-20">
-          <div class="grid grid-cols-12 gap-4">
+          <div class="players-container grid grid-cols-12 gap-4">
             <!-- Players Container -->
             <div
               class="players-container grid col-span-9 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
@@ -247,8 +247,38 @@
               <!--  -->
             </div>
 
-            <!-- Player's List & Budget  Table Container -->
-        
+            <!-- Player's List & Budget Table Container -->
+            <div
+              class="players-list-budget-container grid grid-cols-1 col-span-3 gap-4"
+            >
+              <!-- Player's List  -->
+              <div class="players-list-container">
+                <div
+                  class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+                >
+                  <figure>
+                    <h1
+                      class="text-white py-3 font-semibold text-3xl border-b-2"
+                    >
+                      Selected - V
+                    </h1>
+                  </figure>
+                  <div class="card-body">
+                    <ol
+                      id="selected-players"
+                      class="list-decimal px-8 font-semibold text-base"
+                    >
+                      <li class="text-white my-4">Neymar Jr</li>
+                      <li class="text-white my-4">Kylian Mbappé</li>
+                      <li class="text-white my-4">Sergio Ramos</li>
+                      <li class="text-white my-4">Renato Sanches</li>
+                      <li class="text-white my-4">Vítor Machado</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <!-- Budget Table -->
+            </div>
           </div>
         </div>
       </section>
