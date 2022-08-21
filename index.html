@@ -33,20 +33,225 @@
   </head>
   <body>
     <header>
-         <!-- Banner Section -->
-         <section class="banner-section mb-8">
-            <div class="banner-container">
-                <div class="bg-content bg-top bg-no-repeat h-screen" style="background-image: url('./images/banner.png'); width: 100%;">
-                    <div class="flex flex-col justify-center items-center pt-28 px-96 text-center text-white">
-                        <h2 class="font-serif text-3xl font-bold md:text-5xl mb-7 text-orange-500">Paris Saint-Germain</h2>
-                        <p>Paris Saint-Germain have been pioneers in the world of eSports by becoming the first big European professional to launch their professional eSports section back in 2016, and did so with big ambitions.</p>
-                        
-                    </div>
-                </div>
+      <!-- Banner Section -->
+      <section class="banner-section">
+        <div class="banner-container">
+          <div
+            class="bg-content bg-top bg-no-repeat w-full"
+            style="
+              background-image: url('./images/banner.png');
+              min-height: 520px;
+            "
+          >
+            <div
+              class="flex flex-col justify-center items-center pt-28  text-center text-white"
+            >
+              <h2
+                class="font-serif text-3xl font-bold md:text-5xl mb-7 text-orange-500"
+              >
+                Paris Saint-Germain
+              </h2>
+              <p class="px-48">
+                Paris Saint-Germain have been pioneers in the world of eSports
+                by becoming the first big European professional to launch their
+                professional eSports section back in 2016, and did so with big
+                ambitions.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
+      <!-- Players & Busget Section -->
+      <section class="players-budget-section">
+        <div class="players-budget-container w-9/12 mx-auto pt-8 pb-20">
+          <div class="grid grid-cols-12 gap-4">
+            <!-- Players Container -->
+            <div
+              class="players-container grid col-span-9 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
+            >
+              <!-- Players 1 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/messi.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Lionel Messi
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- -->
+              <!-- Players 2 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/neymar.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Neymar Jr
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <!-- Player 3 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/mbappe.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Kylian Mbappé
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <!-- Player 4 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/ramos.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Sergio Ramos
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <!-- Player 5 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/sanches.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Renato Sanches
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <!-- Players 6 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/vitinha.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Vítor Machado
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+
+            <!-- Player's List & Budget  Table Container -->
+        
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
