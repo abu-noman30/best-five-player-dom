@@ -39,8 +39,9 @@
           <div
             class="bg-content bg-top bg-no-repeat w-full"
             style="
-              background-image: url('./images/banner.png');
               min-height: 520px;
+              background-image: url('./images/banner.png');
+              
             "
           >
             <div
@@ -51,10 +52,10 @@
               >
                 Paris Saint-Germain
               </h2>
-              <p class="px-48">
-                Paris Saint-Germain have been pioneers in the world of eSports
-                by becoming the first big European professional to launch their
-                professional eSports section back in 2016, and did so with big
+              <p class="">
+                Paris Saint-Germain have been pioneers in the world of eSports <br>
+                by becoming the first big European professional to launch their 
+                professional eSports section back in 2016, <br> and did so with big <br>
                 ambitions.
               </p>
             </div>
@@ -66,7 +67,7 @@
       <!-- Players & Busget Section -->
       <section class="players-budget-section">
         <div class="players-budget-container w-9/12 mx-auto pt-8 pb-20">
-          <div class="players-container grid grid-cols-12 gap-4">
+          <div class="players-container grid lg:grid-cols-12 gap-4 sm:grid-cols-1 md:grid-cols-1">
             <!-- Players Container -->
             <div
               class="players-container grid col-span-9 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"
@@ -245,11 +246,99 @@
                 </div>
               </div>
               <!--  -->
+              <!-- Players 7 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/donnarumma.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Donnarumma
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>9 Goals</span><span>.</span><span>20Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <!-- Players 8 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/marquinhos.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Marquinhos
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <!-- Players 9 -->
+              <div
+                class="card card-compact w-full bg-neutral-900 shadow-xl rounded-none"
+              >
+                <figure>
+                  <img
+                    src="./images/verratti.png"
+                    alt="Shoes"
+                    class="w-full h-40"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title justify-center font-bold text-white">
+                    Marco Verratti
+                  </h2>
+                  <div class="flex justify-evenly text-sm text-zinc-400 mb-4">
+                    <span>36 Goals</span><span>.</span><span>120Assist</span>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button
+                      class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
+                      onclick=""
+                    >
+                      SELECT
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              
             </div>
 
             <!-- Selected Player's List & Budget Table Container -->
             <div
-              class="players-list-budget-container grid grid-cols-1 col-span-3 gap-4"
+              class="players-list-budget-container grid grid-cols-1 gap-4 h-4/6 col-span-9 sm:col-span-9 md:col-span-9 lg:col-span-3"
             >
               <!-- Selected Player's List  -->
               <div class="selected-players-container">
@@ -258,7 +347,7 @@
                 >
                   <figure>
                     <h1
-                      class="text-white py-3 font-semibold text-3xl border-b-4 border-b-orange-500"
+                      class="text-white py-3 font-semibold lg:text-3xl border-b-4 border-b-orange-500"
                     >
                       Selected - V
                     </h1>
@@ -266,13 +355,14 @@
                   <div class="card-body">
                     <ol
                       id="selected-players"
-                      class="list-decimal px-8 font-semibold text-base"
+                      class="list-decimal text-white px-1 md:px-40 lg:px-4 xl:px-8 lg:font-semibold lg:text-base"
                     >
-                      <li class="text-white my-4">Neymar Jr</li>
-                      <li class="text-white my-4">Kylian Mbappé</li>
-                      <li class="text-white my-4">Sergio Ramos</li>
-                      <li class="text-white my-4">Renato Sanches</li>
-                      <li class="text-white my-4">Vítor Machado</li>
+                      <li><span class="text-white my-4">Neymar Jr</span></li>
+                      <li><span class="text-white my-4">Kylian Mbappé</span></li>
+                      <li><span class="text-white my-4">Sergio Ramos</span></li>
+                      <li><span class="text-white my-4">Renato Sanches</span></li>
+                      <li><span class="text-white my-4">Vítor Machado</span></li>
+                      
                     </ol>
                   </div>
                 </div>
@@ -284,14 +374,14 @@
                 >
                   <figure>
                     <h1
-                      class="text-white py-3 font-semibold text-3xl border-b-4 border-b-orange-500"
+                      class="text-white py-3 font-semibold lg:text-3xl border-b-4 border-b-orange-500"
                     >
                       Budget
                     </h1>
                   </figure>
                   <div class="card-body">
-                    <div class="text-center">
-                      <label class="text-white inline text-lg"
+                    <div class="flex justify-start">
+                      <label class="text-white inline md:text-lg lg:text-sm xl:text-lg"
                         >Per Player:</label
                       >
                       <input
@@ -301,50 +391,50 @@
                         placeholder="$ budget"
                         class="inline-block ml-2 w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center"
                       />
-                      <div class="my-4">
-                        <button
-                          class="bg-sky-800 text-white rounded-none w-full h-8"
-                        >
-                          Calculate
-                        </button>
-                      </div>
-                      <p class="text-white text-lg">
-                        Player Expenses: <span class="ml-4 mr-1">$</span
+                    </div>
+                    <div class="my-4">
+                      <button
+                        class="bg-sky-800 text-white rounded-none w-full  h-8 mb-4"
+                      >
+                        Calculate
+                      </button>
+                      <p class="text-white md:text-lg lg:text-sm xl:text-lg text-center">
+                        Player Expenses: <span class="sm:ml-24 md:ml-24 lg:ml-0 mr-1">$</span
                         ><span id="">5000</span>
                       </p>
                     </div>
-                    <div class="mt-2">
+                    <div class="">
                       <div class="flex">
-                        <label class="text-white inline text-lg"
-                          >Manager :</label
+                        <label class="text-white inline md:text-lg lg:text-sm xl:text-lg"
+                          >Manager:</label
                         >
                         <input
                           type="number"
                           name=""
                           id=""
                           placeholder="$ budget"
-                          class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center mb-4 ml-3"
+                          class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center mb-4 ml-3 "
                         />
                       </div>
                       <div class="flex">
-                        <label class="text-white inline text-lg">Coach :</label>
+                        <label class="text-white inline md:text-lg lg:text-sm xl:text-lg">Coach:</label>
                         <input
                           type="number"
                           name=""
                           id=""
                           placeholder="$ budget"
-                          class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center ml-8"
+                          class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center ml-7 sm:ml-7 md:ml-8 lg:ml-8"
                         />
                       </div>
-                      <div class="my-4">
+                      <div class="my-4 ">
                         <button
                           class="bg-sky-800 text-white rounded-none w-full h-8"
                         >
                           Calculate Total
                         </button>
                       </div>
-                      <p class="text-white text-lg text-center">
-                        Total: <span class="ml-24 mr-1">$</span
+                      <p class="text-white md:text-lg lg:text-sm xl:text-lg text-center">
+                        Total: <span class=" sm:ml-24 md:ml-24 lg:ml-12 mr-1">$</span
                         ><span id="">5000</span>
                       </p>
                     </div>
