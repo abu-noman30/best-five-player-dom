@@ -1,11 +1,11 @@
 let valueObject = {};
 
 function calculateTotal(managerBudget,coachBudget){
-    let budgetOfManagerAndCouch = managerBudget + coachBudget;
-    let totalBudget = budgetOfManagerAndCouch + valueObject.playersTotalExpenses;
 
-    let targetTotalField = document.querySelector('#total-budget');
-        targetTotalField.innerText = totalBudget;
+    let managerCouchBudget = managerBudget + coachBudget;
+    let totalBudget = managerCouchBudget + valueObject.playersTotalExpenses;
+
+    return totalBudget;
     
 }
 
@@ -30,8 +30,10 @@ function handlerOnSelectPlayer(element) {
         // console.log(valueObject);
         
     }else{
+        document.querySelector('#display-id').classList.remove('hidden');
         alert('You can select only 5 players');
         element.disabled = false;
+        
 
     }
      
@@ -46,14 +48,21 @@ function handlerOnCalculatePlayerExpenses(){
         }else{
             valueObject.perPlayerBudget = playerBudgetValue;
         }
-        
-    let playersTotalExpenses = (valueObject.perPlayerBudget * valueObject.length);
-    valueObject.playersTotalExpenses = playersTotalExpenses;
-    console.log(valueObject);
+    if (valueObject.length === 0 || valueObject.length === undefined || valueObject.length === null || valueObject.length === '' || !valueObject.length ) {
+        alert('Please select at least one player');
+        targetPlayerBudgetInput.value = '';
+        return;
 
-    let targetPlayersTotalExpenses = document.querySelector('#players-total-expenses');
-       targetPlayersTotalExpenses.innerText = playersTotalExpenses;
-       targetPlayerBudgetInput.value = '';
+    } else{
+        let playersTotalExpenses = (valueObject.perPlayerBudget * valueObject.length);
+            valueObject.playersTotalExpenses = playersTotalExpenses;
+            console.log(valueObject);
+
+        let targetPlayersTotalExpenses = document.querySelector('#players-total-expenses');
+            targetPlayersTotalExpenses.innerText = playersTotalExpenses;
+            targetPlayerBudgetInput.value = '';
+    }   
+    
     
 }
 
@@ -66,6 +75,20 @@ function handlerOnCalculateTotalBudget(){
     let coachBudgetValue = parseInt(targetCoachInput.value);
         targetCoachInput.value = '';
 
-    calculateTotal(managerBudgetValue,coachBudgetValue);
+    if(managerBudgetValue <= 0 || coachBudgetValue<=0 || isNaN(managerBudgetValue) == true || isNaN(coachBudgetValue) == true){
+            alert('Please enter a valid number');
+            return;
+    }else if (valueObject.length === 0 || valueObject.length === undefined || valueObject.length === null || valueObject.length === '' || !valueObject.length) {
+            alert('Please select at least one player');
+            return;
+        } else{
+
+            let totalBudget = calculateTotal(managerBudgetValue,coachBudgetValue);
+
+            let targetTotalField = document.querySelector('#total-budget');
+                targetTotalField.innerText = totalBudget;
+        }
+
+        
 
 }
