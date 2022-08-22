@@ -14,7 +14,7 @@ function handlerOnSelectPlayer(element) {
     let playerName = element.parentElement.parentElement.children[0].innerText;
     // console.log(playerName);
 
-     let targetPlayersList =document.querySelector('#selected-players');
+     let targetPlayersList = document.querySelector('#selected-players');
      let listItem = document.createElement('li');
          listItem.innerHTML = `<span class="text-white my-4">${playerName}</span>`;
 
@@ -42,18 +42,21 @@ function handlerOnSelectPlayer(element) {
 function handlerOnCalculatePlayerExpenses(){
     let targetPlayerBudgetInput = document.querySelector('#input-player-budget');
     let playerBudgetValue = parseInt(targetPlayerBudgetInput.value);
-        if(playerBudgetValue <= 0 || isNaN(playerBudgetValue) == true){
+
+
+        if(playerBudgetValue <= 0 || isNaN(playerBudgetValue) === true){
             alert('Please enter a valid number');
             return;
         }else{
             valueObject.perPlayerBudget = playerBudgetValue;
         }
-    if (valueObject.length === 0 || valueObject.length === undefined || valueObject.length === null || valueObject.length === '' || !valueObject.length ) {
+
+        if (valueObject.length === 0 || valueObject.length === undefined || valueObject.length === null || valueObject.length === '' || !valueObject.length ) {
         alert('Please select at least one player');
         targetPlayerBudgetInput.value = '';
         return;
 
-    } else{
+        } else{
         let playersTotalExpenses = (valueObject.perPlayerBudget * valueObject.length);
             valueObject.playersTotalExpenses = playersTotalExpenses;
             console.log(valueObject);
