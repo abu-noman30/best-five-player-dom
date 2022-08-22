@@ -93,7 +93,8 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
+                      ondblclick = 'handlerOnDoubleClickPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -122,7 +123,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -151,7 +152,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -180,7 +181,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -209,7 +210,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -238,7 +239,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -267,7 +268,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -296,7 +297,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -325,7 +326,7 @@
                   <div class="card-actions justify-center">
                     <button
                       class="bg-sky-800 text-white rounded-none text-base w-32 h-8"
-                      onclick=""
+                      onclick='handlerOnSelectPlayer(this)'
                     >
                       SELECT
                     </button>
@@ -357,11 +358,11 @@
                       id="selected-players"
                       class="list-decimal text-white px-1 md:px-40 lg:px-4 xl:px-8 lg:font-semibold lg:text-base"
                     >
-                      <li><span class="text-white my-4">Neymar Jr</span></li>
+                      <!-- <li><span class="text-white my-4">Neymar Jr</span></li>
                       <li><span class="text-white my-4">Kylian Mbappé</span></li>
                       <li><span class="text-white my-4">Sergio Ramos</span></li>
                       <li><span class="text-white my-4">Renato Sanches</span></li>
-                      <li><span class="text-white my-4">Vítor Machado</span></li>
+                      <li><span class="text-white my-4">Vítor Machado</span></li> -->
                       
                     </ol>
                   </div>
@@ -387,7 +388,7 @@
                       <input
                         type="number"
                         name=""
-                        id=""
+                        id="input-player-budget"
                         placeholder="$ budget"
                         class="inline-block ml-2 w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center"
                       />
@@ -395,12 +396,13 @@
                     <div class="my-4">
                       <button
                         class="bg-sky-800 text-white rounded-none w-full  h-8 mb-4"
+                        onclick="handlerOnCalculatePlayerExpenses()"
                       >
                         Calculate
                       </button>
                       <p class="text-white md:text-lg lg:text-sm xl:text-lg text-center">
                         Player Expenses: <span class="sm:ml-24 md:ml-24 lg:ml-0 mr-1">$</span
-                        ><span id="">5000</span>
+                        ><span id="players-total-expenses"></span>
                       </p>
                     </div>
                     <div class="">
@@ -411,7 +413,7 @@
                         <input
                           type="number"
                           name=""
-                          id=""
+                          id="input-manager-budget"
                           placeholder="$ budget"
                           class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center mb-4 ml-3 "
                         />
@@ -421,7 +423,7 @@
                         <input
                           type="number"
                           name=""
-                          id=""
+                          id="input-coach-budget"
                           placeholder="$ budget"
                           class="inline-block w-6/12 h-8 bg-neutral-900 text-white border-2 border-white text-center ml-7 sm:ml-7 md:ml-8 lg:ml-8"
                         />
@@ -429,13 +431,14 @@
                       <div class="my-4 ">
                         <button
                           class="bg-sky-800 text-white rounded-none w-full h-8"
+                          onclick="handlerOnCalculateTotalBudget()"
                         >
                           Calculate Total
                         </button>
                       </div>
                       <p class="text-white md:text-lg lg:text-sm xl:text-lg text-center">
                         Total: <span class=" sm:ml-24 md:ml-24 lg:ml-12 mr-1">$</span
-                        ><span id="">5000</span>
+                        ><span id="total-budget"></span>
                       </p>
                     </div>
                   </div>
